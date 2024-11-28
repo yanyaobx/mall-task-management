@@ -49,6 +49,7 @@ A **WeChat Mini Program** designed to streamline daily task management for malls
 
 ## Project Structure
 
+```plaintext
 Mall Task Management
 ├── cloudfunctions/
 │   ├── getTasks/
@@ -68,6 +69,7 @@ Mall Task Management
 │   └── custom-tab-bar/
 ├── README.md
 └── package.json
+```
 
 ---
 
