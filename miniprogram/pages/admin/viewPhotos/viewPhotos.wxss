@@ -1,0 +1,18 @@
+.container {
+  padding: 20px;
+}
+
+.photo-item {
+  margin-bottom: 20px;
+}
+
+photo-item image {
+  width: 100%;
+  height: auto;
+}
+
+photo-item text {
+  font-size: 14px;
+  color: #555;
+}
+

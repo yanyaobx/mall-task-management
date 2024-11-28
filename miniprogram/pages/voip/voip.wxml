@@ -1,0 +1,41 @@
+<view class="container">
+  <!-- 显示通话状态 -->
+  <view class="status">
+    <text class="status-text">当前状态: {{callStatus}}</text>
+  </view>
+
+  <!-- 刷新按钮 -->
+  <button bindtap="refreshOnlineUsers" class="refresh-button">刷新在线用户</button>
+
+  <!-- 在线用户列表区域 -->
+  <view class="online-users-container">
+    <!-- 如果在线用户数量大于0，显示用户列表 -->
+    <block wx:if="{{onlineUsers.length > 0}}">
+      <view class="user-list">
+        <block wx:for="{{onlineUsers}}" wx:key="openid">
+          <view class="user-item">
+            <image class="user-avatar" src="{{item.avatar}}" mode="aspectFill"></image>
+            <text class="user-id">{{item.id}}</text>
+            <!-- 如果未在通话，显示发起通话按钮 -->
+            <button wx:if="{{!isInCall}}" bindtap="initiateCall" data-openid="{{item.openid}}" class="call-button start-call">
+              <text class="call-text">发起通话</text>
+            </button>
+          </view>
+        </block>
+      </view>
+    </block>
+
+    <!-- 如果没有在线用户，显示提示信息 -->
+    <block wx:else>
+      <view class="no-online-users">
+        <text class="no-users-text">目前无人在线</text>
+      </view>
+    </block>
+  </view>
+
+  <!-- 挂断通话按钮，只有在通话时显示 -->
+  <button wx:if="{{isInCall}}" bindtap="endCall" class="call-button end-call">
+    <text class="call-text">挂断通话</text>
+  </button>
+</view>
+

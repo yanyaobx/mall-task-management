@@ -1,0 +1,95 @@
+/* 设置整个页面的背景颜色为白色 */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff; /* 白色背景 */
+  padding: 0 20px; /* 添加内边距，防止内容超出背景 */
+}
+
+/* 登录框样式 */
+.login-box {
+  width: 100%; /* 设置宽度为100%，配合max-width限制最大宽度 */
+  max-width: 300px; /* 限制最大宽度为300px */
+  padding: 20px; /* 增加内边距 */
+  background-color: #ffffff; /* 白色背景 */
+  border-radius: 8px; /* 圆角边框 */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+/* 输入框样式 */
+.input-field {
+  width: 100%;
+  padding: 10px 8px; /* 确保输入框内边距一致，并增加上下内边距 */
+  margin-bottom: 15px; /* 调整下方间距 */
+  border: 1px solid #1AAD19; /* 绿色边框 */
+  border-radius: 4px; /* 圆角边框 */
+  font-size: 14px; /* 调整字体大小 */
+}
+
+/* 记住密码选择框样式 */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* 增加与登录按钮之间的间距 */
+}
+
+.checkbox-label {
+  font-size: 14px; /* 调整字体大小 */
+  color: #333333; /* 文字颜色 */
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label checkbox {
+  margin-right: 5px; /* 调整复选框与文字的间距 */
+}
+
+/* 登录按钮样式 */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1AAD19; /* 微信绿色 */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px; /* 圆角边框 */
+  font-size: 16px; /* 调整字体大小 */
+  text-align: center;
+  margin-top: 10px; /* 增加按钮顶部间距 */
+}
+
+/* 鼠标悬停时的效果 */
+.login-button:hover {
+  background-color: #158a15;
+}
+
+/* 按钮点击时的效果 */
+.login-button:active {
+  background-color: #0f7311;
+  transform: scale(0.98);
+}
+
+/* 注册按钮样式 */
+.register-button {
+  width: 100%;
+  padding: 10px; /* 和登录按钮一致 */
+  background-color: #409eff; /* 蓝色背景 */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px; /* 圆角边框，与登录按钮一致 */
+  font-size: 16px; /* 字体大小，与登录按钮一致 */
+  text-align: center;
+  margin-top: 15px; /* 设置与登录按钮的间距 */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* 添加过渡效果 */
+}
+
+.register-button:hover {
+  background-color: #2b85e4; /* 鼠标悬停时的颜色变化 */
+}
+
+.register-button:active {
+  background-color: #1766cc; /* 按钮点击时的颜色变化 */
+  transform: scale(0.98); /* 点击时的缩放效果 */
+}

@@ -1,0 +1,110 @@
+.page_container {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 30rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  padding: 30rpx 20rpx;
+  border-radius: 15rpx;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30rpx;
+  text-align: center;
+}
+
+.date, .status {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.date {
+  font-size: 34rpx;
+}
+
+.status {
+  margin-top: 15rpx;
+  color: #999;
+}
+
+.tasks_container {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15rpx;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  padding: 20rpx;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25rpx 0;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item:hover {
+  background-color: #f0f4f8;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-name {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.task-status {
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 5rpx;
+}
+
+.task-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.task-button {
+  padding: 12rpx 30rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  margin-right: 10rpx;
+  border: none;
+  color: #fff;
+  transition: opacity 0.3s, transform 0.2s;
+}
+
+.view-button {
+  background-color: #ff9800;
+}
+
+.upload-button {
+  background-color: #4caf50;
+}
+
+.task-button:hover {
+  opacity: 0.9;
+}
+
+.task-button:active {
+  transform: scale(0.98);
+}
+
+.task-button[disabled] {
+  background-color: #ddd;
+  color: #999;
+}

@@ -1,0 +1,90 @@
+/* 设置整个页面的背景颜色为白色 */
+page {
+  background-color: #ffffff; /* 白色背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px; /* 添加内边距，防止内容超出背景 */
+}
+
+/* 容器样式 */
+.container {
+  width: 100%;
+  max-width: 300px; /* 限制最大宽度为300px */
+  padding: 20px;
+  background-color: #ffffff; /* 白色背景 */
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+/* 输入框样式 */
+input {
+  width: 100%;
+  padding: 10px 8px; /* 确保输入框内边距一致，并增加上下内边距 */
+  margin-bottom: 15px;
+  border: 1px solid #1AAD19; /* 绿色边框 */
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fafafa;
+  outline: none;
+}
+
+input:focus {
+  border-color: #409eff; /* 聚焦时的边框颜色 */
+  box-shadow: 0 0 3px rgba(64, 158, 255, 0.3); /* 聚焦时的阴影效果 */
+}
+
+/* 按钮样式 */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #1AAD19; /* 微信绿色 */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* 注册按钮样式 */
+button.register-button {
+  background-color: #1AAD19; /* 微信绿色 */
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+button.register-button:hover {
+  background-color: #158a15; /* 鼠标悬停时的颜色变化，统一为绿色 */
+}
+
+button.register-button:active {
+  background-color: #0f7311; /* 按钮点击时的颜色变化，统一为绿色 */
+  transform: scale(0.98);
+}
+
+/* 注册完成按钮样式 */
+button.complete-button {
+  background-color: #409eff; /* 蓝色背景 */
+  color: #ffffff;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button.complete-button:hover {
+  background-color: #2b85e4; /* 鼠标悬停时的颜色变化 */
+}
+
+button.complete-button:active {
+  background-color: #1766cc; /* 按钮点击时的颜色变化 */
+  transform: scale(0.98);
+}

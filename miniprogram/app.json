@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/task/task",
+    "pages/history/history",
+    "pages/voip/voip",
+    "pages/user-center/index",
+    "pages/admin/dashboard/dashboard",
+    "pages/photoCapture/photoCapture",
+    "pages/register/register"
+  ],
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/task/task",
+        "text": "任务",
+        "iconPath": "/images/icons/task.png",
+        "selectedIconPath": "/images/icons/task-active.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史",
+        "iconPath": "/images/icons/history.png",
+        "selectedIconPath": "/images/icons/history-active.png"
+      },
+      {
+        "pagePath": "pages/voip/voip",
+        "text": "通话",
+        "iconPath": "/images/icons/voip.png",
+        "selectedIconPath": "/images/icons/voip-active.png"
+      },
+      {
+        "pagePath": "pages/user-center/index",
+        "text": "我",
+        "iconPath": "/images/icons/usercenter.png",
+        "selectedIconPath": "/images/icons/usercenter-active.png"
+      },
+      {
+        "pagePath": "pages/admin/dashboard/dashboard",
+        "text": "控制面板",
+        "iconPath": "/images/icons/dashboard.png",
+        "selectedIconPath": "/images/icons/dashboard-active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

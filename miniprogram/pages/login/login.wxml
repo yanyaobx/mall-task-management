@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="login-box">
+    <input 
+      style="width: 577rpx; height: 40px; display: block; box-sizing: border-box" 
+      class="input-field" 
+      placeholder="用户名" 
+      bindinput="onUsernameInput" 
+      type="text" 
+    />
+    <input 
+      style="width: 577rpx; height: 40px; display: block; box-sizing: border-box" 
+      class="input-field" 
+      placeholder="密码" 
+      type="password"
+      bindinput="onPasswordInput" 
+    />
+
+    <!-- 记住密码选择框 -->
+    <checkbox-group class="checkbox-group" bindchange="onRememberPasswordChange">
+      <label class="checkbox-label">
+        <checkbox value="remember" checked="{{rememberPassword}}" /> 记住密码
+      </label>
+    </checkbox-group>
+
+    <button class="login-button" bindtap="onLogin" style="position: relative; left: 0rpx; top: -2rpx">登录</button>
+
+    <!-- 新增注册按钮 -->
+    <button class="register-button" bindtap="navigateToRegister" style="margin-top: 20px; background-color: #409eff; color: #ffffff; border: none; border-radius: 5px; padding: 10px;">
+      注册新用户
+    </button>
+  </view>
+</view>
+
+
+
+

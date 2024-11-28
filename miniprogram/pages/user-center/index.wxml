@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="user-info-box">
+    <view class="avatar-box">
+      <image class="avatar" src="/images/icons/usercenter.png" />
+    </view>
+    <text class="id">ID: {{id}}</text> <!-- 显示用户ID -->
+    <text class="username">用户名: {{username}}</text> <!-- 显示用户名，不可修改 -->
+  </view>
+
+  <view class="actions">
+    <button class="action-button" bindtap="changeId">修改ID</button> <!-- 修改ID的按钮 -->
+    <button class="action-button logout" bindtap="logout">退出登录</button> <!-- 退出登录按钮 -->
+  </view>
+</view>
+
+
+
+
+

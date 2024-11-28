@@ -1,0 +1,33 @@
+<view class="page_container">
+  <view class="header">
+    <text class="date">日期：{{date}}</text>
+    <text class="status">任务状态：{{isAllTasksCompleted ? '已完成' : '未完成'}}</text>
+  </view>
+
+  <view class="tasks_container">
+    <block wx:for="{{tasks}}" wx:key="taskId">
+      <view class="task-item">
+        <view class="task-info">
+          <text class="task-name">{{item.name}}</text>
+          <text class="task-status">{{item.status === 'completed' ? '已完成' : '待完成'}}</text>
+        </view>
+        <view class="task-buttons">
+          <button 
+            class="task-button view-button" 
+            bindtap="viewTaskPhotos" 
+            data-task-id="{{item.taskId}}"
+          >
+            查看照片
+          </button>
+          <button 
+            class="task-button upload-button" 
+            bindtap="navigateToPhotoCapture" 
+            data-task-id="{{item.taskId}}"
+          >
+            {{item.status === 'completed' ? '更换照片' : '拍照上传'}}
+          </button>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

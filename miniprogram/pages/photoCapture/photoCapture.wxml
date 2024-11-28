@@ -1,0 +1,21 @@
+<view class="page_container">
+  <!-- 相机组件 -->
+  <camera 
+    device-position="back" 
+    flash="auto"
+    binderror="onCameraError" 
+    style="width: 100%; height: 300px;" 
+  ></camera>
+  
+  <!-- 拍照按钮 -->
+  <button type="primary" bindtap="takePhoto" class="photo-button">拍照</button>
+  
+  <!-- 照片预览和上传操作区 -->
+  <view class="photo-container" wx:if="{{src}}">
+    <image mode="widthFix" src="{{src}}" class="photo-preview"></image>
+    <view class="action-buttons">
+      <button type="default" bindtap="previewPhoto" class="action-button">预览照片</button>
+      <button type="primary" bindtap="uploadPhoto" class="action-button" loading="{{isUploading}}">上传照片</button>
+    </view>
+  </view>
+</view>

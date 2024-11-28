@@ -1,0 +1,9 @@
+<!-- register.wxml -->
+<view class="container">
+  <input type="text" placeholder="请输入用户名" bindinput="onUsernameInput"/>
+  <input type="password" placeholder="请输入密码" bindinput="onPasswordInput"/>
+  <!-- 其他需要的用户信息输入框 -->
+  <button bindtap="onRegister">注册</button>
+  <!-- 新增的“注册完成”按钮 -->
+  <button class="complete-button" bindtap="completeRegistration">注册完成</button>
+</view>

@@ -1,0 +1,9 @@
+<view class="container">
+  <block wx:for="{{photosURL}}" wx:key="*this">
+    <view class="photo-item">
+      <image src="{{item}}" mode="aspectFit" />
+      <text>{{tasks[$index].name}}</text> <!-- 在照片下方显示任务名称 -->
+    </view>
+  </block>
+</view>
+

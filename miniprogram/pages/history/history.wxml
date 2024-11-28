@@ -1,0 +1,28 @@
+<view class="container">
+  <!-- 显示任务统计信息 -->
+  <view class="task-summary">
+    <text class="task-summary-text">已完成任务: {{completedCount}} / {{totalCount}}</text>
+  </view>
+
+  <!-- 如果有历史记录，则显示历史记录 -->
+  <block wx:if="{{hasHistory}}">
+    <block wx:for="{{history}}" wx:key="taskId">
+      <view class="task-item">
+        <view class="task-info">
+          <text class="task-id">任务ID: {{item.taskId}}</text>
+          <text class="task-date">日期: {{item.date}}</text>
+          <text class="task-status">状态: {{item.status}}</text>
+        </view>
+        <!-- 如果有图片，则显示图片 -->
+        <image wx:if="{{item.fileID}}" class="task-image" src="{{item.fileID}}" mode="aspectFit" />
+      </view>
+    </block>
+  </block>
+
+  <!-- 如果没有历史记录，则显示提示信息 -->
+  <view wx:else class="no-history">
+    <text>目前还没有历史记录，请先完成任务吧！</text>
+  </view>
+</view>
+
+

@@ -1,0 +1,18 @@
+<view class="container">
+  <block wx:for="{{tasks}}" wx:key="id">
+    <view class="task-item">
+      <text class="task-id">{{item.id}}</text> <!-- 显示用户的 id -->
+      <text class="task-progress {{item.completed ? 'completed' : 'incomplete'}}">{{item.progress}}</text> <!-- 根据完成状态应用不同的样式 -->
+      <button 
+        class="view-button" 
+        bindtap="viewAllPhotos" 
+        data-photos-url="{{item.photosURL}}" 
+        data-user-id="{{item.id}}"
+      >
+        查看
+      </button>
+    </view>
+    <view class="separator"></view> <!-- 分隔线 -->
+  </block>
+</view>
+

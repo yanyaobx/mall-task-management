@@ -1,0 +1,11 @@
+<view class="tab-bar">
+  <block wx:for="{{list}}" wx:key="index">
+    <!-- 动态切换选中类 -->
+    <view class="tab-bar-item {{item.isSelected ? 'selected' : ''}}" bindtap="switchTab" data-path="{{item.pagePath}}" data-index="{{index}}" style="text-align: center;">
+      <!-- 切换图标，图片在上 -->
+      <image class="tab-bar-icon" src="{{item.iconPath}}" mode="aspectFill" style="width: 62rpx; height: 62rpx; display: block; margin: 0 auto;"></image>
+      <!-- 切换文字颜色，文字在下 -->
+      <text class="tab-bar-text {{item.isSelected ? 'text-selected' : ''}}" style="display: block; margin-top: 6rpx; text-align: center;">{{item.text}}</text>
+    </view>
+  </block>
+</view>

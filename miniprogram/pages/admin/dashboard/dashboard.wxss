@@ -1,0 +1,56 @@
+/* 设置容器样式 */
+.container {
+  padding: 20rpx;
+}
+
+/* 设置任务项样式 */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;  /* 增加上下间距 */
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%; /* 确保任务项占满整个宽度 */
+}
+
+/* 设置任务ID的样式 */
+.task-id {
+  flex: 1;  /* 占据1/3的宽度 */
+  color: #333333;
+  font-size: 28rpx;  /* 调整字体大小 */
+  text-align: center;  /* 居中 */
+}
+
+/* 设置任务进度的样式 */
+.task-progress {
+  flex: 1;  /* 占据1/3的宽度 */
+  text-align: center;  /* 居中 */
+  font-size: 28rpx;  /* 调整字体大小 */
+}
+
+.task-progress.completed {
+  color: #4CAF50; /* 绿色表示完成 */
+}
+
+.task-progress.incomplete {
+  color: #FF5722; /* 红色表示未完成 */
+}
+
+/* 设置查看按钮的样式 */
+.view-button {
+  flex: 1;  /* 占据1/3的宽度 */
+  text-align: center;  /* 居中 */
+  background-color: #1AAD19;
+  color: white;
+  padding: 10rpx 20rpx;  /* 增加内边距，使按钮看起来更大 */
+  border-radius: 5rpx;
+  font-size: 28rpx;  /* 调整字体大小 */
+}
+
+/* 设置分隔线样式 */
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 10rpx 0;
+}

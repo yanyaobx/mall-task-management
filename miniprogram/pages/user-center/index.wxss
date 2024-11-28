@@ -1,0 +1,77 @@
+/* 设置整个页面的背景颜色为白色 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff; /* 白色背景 */
+  height: 100vh;
+}
+
+/* 用户信息框样式 */
+.user-info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* 头像框样式 */
+.avatar-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 2px solid #1AAD19; /* 绿色边框，增加头像的突出效果 */
+}
+
+/* 头像图片样式 */
+.avatar {
+  width: 100%;
+  height: 100%;
+}
+
+/* 用户名样式 */
+.username {
+  color: #000000; /* 黑色文字 */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 操作按钮容器样式 */
+.actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 操作按钮样式 */
+.action-button {
+  width: 60%; /* 调整按钮宽度 */
+  padding: 8px; /* 减少内边距 */
+  margin-bottom: 10px; /* 减少按钮间距 */
+  background-color: #1AAD19; /* 微信绿色 */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px; /* 减小字体大小 */
+  text-align: center;
+}
+
+.action-button.logout {
+  background-color: #d9534f; /* 红色按钮用于退出登录 */
+}
+
+.action-button:hover {
+  background-color: #158a15; /* 鼠标悬停时颜色加深 */
+}
+
+.action-button:active {
+  background-color: #0f7311; /* 按钮点击时颜色更深 */
+  transform: scale(0.98); /* 点击时按钮稍微缩小 */
+}
+
+
+

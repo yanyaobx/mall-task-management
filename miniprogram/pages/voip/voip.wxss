@@ -1,0 +1,135 @@
+/* Container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background: linear-gradient(135deg, #00c6ff, #0072ff); /* 蓝色渐变背景 */
+  padding: 40rpx;
+  box-sizing: border-box;
+  overflow-y: auto; /* 支持滚动，防止内容溢出屏幕 */
+}
+
+/* Status text styling */
+.status-text {
+  font-size: 48rpx; /* 使用rpx来自动适配字体大小 */
+  color: #ffffff;
+  margin-bottom: 60rpx;
+  font-weight: 700; /* 加粗字体 */
+  letter-spacing: 1rpx; /* 增加字母间距 */
+  text-shadow: 3rpx 3rpx 6rpx rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+  text-align: center;
+  width: 100%; /* 确保文本占满整个宽度 */
+}
+
+/* Refresh button styling */
+.refresh-button {
+  background-color: #ffffff;
+  color: #0072ff;
+  font-size: 32rpx;
+  font-weight: 600;
+  padding: 20rpx 40rpx; /* 使用相对单位 */
+  margin-bottom: 40rpx;
+  border-radius: 50rpx;
+  box-shadow: 0 8rpx 15rpx rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s ease;
+}
+
+.refresh-button:hover {
+  background-color: #0072ff;
+  color: #ffffff;
+  box-shadow: 0 12rpx 20rpx rgba(0, 0, 0, 0.3);
+}
+
+/* Online users container */
+.online-users-container {
+  width: 100%;
+  padding: 40rpx;
+  margin-bottom: 60rpx;
+  display: flex;
+  justify-content: center; /* 确保居中对齐 */
+}
+
+/* Online users list styling */
+.user-list {
+  display: flex;
+  flex-wrap: wrap; /* 自动换行 */
+  justify-content: center; /* 水平居中对齐所有用户 */
+  align-items: center; /* 垂直居中 */
+  width: 100%;
+  gap: 40rpx; /* 控制每个用户项之间的间距 */
+}
+
+/* Single user item styling */
+.user-item {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center; /* 确保头像和按钮水平居中 */
+  justify-content: center; /* 垂直居中 */
+  margin: 20rpx; /* 调整每个用户项的外边距 */
+  width: 240rpx;
+}
+
+/* User avatar styling */
+.user-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%; /* 圆形头像 */
+  border: 2rpx solid #ffffff; /* 添加白色边框 */
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.2); /* 头像阴影 */
+  margin-bottom: 20rpx; /* 与名字的间距 */
+}
+
+/* Call button styling */
+.call-button {
+  width: 15vw; /* 按钮宽度为视口宽度的15% */
+  height: 15vw; /* 按钮高度为视口宽度的15% */
+  max-width: 200rpx; /* 设置最大宽度 */
+  max-height: 200rpx; /* 设置最大高度 */
+  min-width: 150rpx; /* 设置最小宽度 */
+  min-height: 150rpx; /* 设置最小高度 */
+  border-radius: 50%; /* 圆形按钮 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx; /* 调整字体大小 */
+  line-height: 1.5; /* 确保行高合适 */
+  color: white;
+  text-align: center; /* 水平居中 */
+  padding: 0; /* 去掉内边距 */
+  margin-top: 20rpx;
+  box-shadow: 0 8rpx 15rpx rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.call-button:active {
+  transform: scale(0.95); /* 按下时缩小按钮 */
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.2); /* 按下时减小阴影 */
+}
+
+/* Call text styling */
+.call-text {
+  display: inline-block;
+  line-height: 1.5; /* 确保文本的行高 */
+}
+
+/* Start call button styling */
+.start-call {
+  background: linear-gradient(135deg, #43e97b, #38f9d7); /* 绿色按钮渐变 */
+}
+
+.start-call:hover {
+  transform: scale(1.05); /* 鼠标悬停时放大效果 */
+  box-shadow: 0 12rpx 20rpx rgba(0, 0, 0, 0.4);
+}
+
+/* End call button styling */
+.end-call {
+  background: linear-gradient(135deg, #f85032, #e73827); /* 红色按钮渐变 */
+}
+
+.end-call:hover {
+  transform: scale(1.05); /* 鼠标悬停时放大效果 */
+  box-shadow: 0 12rpx 20rpx rgba(0, 0, 0, 0.4);
+}
